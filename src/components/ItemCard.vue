@@ -19,7 +19,7 @@ defineProps({
                     <img
                         :alt="title"
                         class="block w-full h-auto"
-                        :src="'/src/assets/img/' + image"
+                        :src="image"
                     />
                 </div>
             </RouterLink>

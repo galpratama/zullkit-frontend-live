@@ -8,7 +8,7 @@ const categories = ref([])
 
 async function getCategoriesData() {
     try {
-        const response = await axios.get('http://zullkit-backend.buildwithangga.id/api/categories?show_product=1&limit=4')
+        const response = await axios.get('http://zullkit-backend.buildwithangga.id/api/categories?limit=4')
         categories.value = response.data.data.data
     } catch (error) {
         console.error(error)
@@ -30,7 +30,7 @@ onMounted(() => {
                 :id="category.id" 
                 :key="category.id" 
                 :title="category.name" 
-                :count="category.products.length"
+                :count="category.products_count"
                 :image="category.thumbnails" />
         </div>
     </div>

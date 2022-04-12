@@ -13,7 +13,7 @@ export const useUserStore = defineStore({
     actions: {
         async fetchUser() {
             try {
-                const { data } = await axios.get('http://zullkit-backend.buildwithangga.id/api/user', {
+                const { data } = await axios.get('https://zullkit-backend.buildwithangga.id/api/user', {
                     headers: {
                         Authorization: localStorage.getItem('token_type') + ' ' + localStorage.getItem('access_token')
                     }

@@ -8,7 +8,7 @@ const categories = ref([])
 
 async function getCategoriesData() {
     try {
-        const response = await axios.get('http://zullkit-backend.buildwithangga.id/api/categories?limit=10000')
+        const response = await axios.get('https://zullkit-backend.buildwithangga.id/api/categories?limit=10000')
         categories.value = response.data.data.data
     } catch (error) {
         console.error(error)

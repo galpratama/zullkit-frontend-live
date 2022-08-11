@@ -10,6 +10,7 @@ const thumbnail = ref(props.defaultImage);
 
 function changeImage(image) {
   this.thumbnail = image;
+  console.log(image);
 }
 </script>
 
